@@ -31,10 +31,11 @@ Write a Python program that takes input from the user to create a list of intege
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
-
+numMap = map(int, input_numbers.split())
+numbers_list = list(numMap)
 
 # Sorting:
-
+numbers_list = sorted(numbers_list)
 
 # Print Output
 print("Sorted list:", numbers_list)
@@ -74,10 +75,13 @@ Extend the previous Python program to include tuples. Now, in addition to creati
 input_numbers = input("Enter a series of space-separated integers: ")
 
 # Convert Input:
+numbers_list = list(map(int, input_numbers.split()))
 
+numTuple = tuple(map(int, input_numbers.split()))
 
 # Sorting:
-
+numbers_list = sorted(numbers_list)
+sorted_tuple = sorted(numTuple)
 
 # Print Output
 print("Sorted list:", numbers_list)
